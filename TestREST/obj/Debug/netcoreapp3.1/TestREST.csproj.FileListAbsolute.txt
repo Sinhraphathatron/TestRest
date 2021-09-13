@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\TestREST.exe
+C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\TestREST.deps.json
+C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\TestREST.runtimeconfig.json
+C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\TestREST.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\TestREST.dll
+C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\TestREST.pdb
+C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\TestREST.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\TestREST.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\TestREST.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\TestREST.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\TestREST.dll
+C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\TestREST.pdb
+C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\TestREST.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\TestREST.csproj.CopyComplete
