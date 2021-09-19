@@ -14,3 +14,4 @@ C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\Te
 C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\RestSharp.dll
 C:\Users\Administrator\source\repos\TestREST\TestREST\obj\Debug\netcoreapp3.1\TestREST.csproj.CopyComplete
 C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\TestREST\TestREST\bin\Debug\netcoreapp3.1\JsonDiffPatchDotNet.dll

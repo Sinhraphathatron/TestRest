@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "usLfzzknbjNn7/qjbKgPa9b2qHg+fgNh+sbledw3ey56cOvliIERlkstMhtrkHTfspY25VeXr6MDar4Q1Dl99A==",
+  "dgSpecHash": "i0R4AyCbOzzoY4hhR6GLsY27Llhf99QPijoaB8NjltdD+f9w8Ws4H+V1dRwRpKO4+8LPJ2Dx+BcF+JEKYrN5KQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\TestREST\\TestREST\\TestREST.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\jsondiffpatch.net\\2.3.0\\jsondiffpatch.net.2.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\restsharp\\106.12.0\\restsharp.106.12.0.nupkg.sha512"
   ],

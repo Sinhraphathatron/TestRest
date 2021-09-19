@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "JsonDiffPatch.Net/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/JsonDiffPatchDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/JsonDiffPatchDotNet.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -23,6 +35,21 @@
     }
   },
   "libraries": {
+    "JsonDiffPatch.Net/2.3.0": {
+      "sha512": "a+I1WNXSwkelsgUfMk3LVRY3FzQDV8nCpRMcml2whQDimbnOG+mxRCt6kCzMRFwshg9ir4shm0yvYDL7E89ayg==",
+      "type": "package",
+      "path": "jsondiffpatch.net/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "jsondiffpatch.net.2.3.0.nupkg.sha512",
+        "jsondiffpatch.net.nuspec",
+        "lib/net45/JsonDiffPatchDotNet.dll",
+        "lib/netstandard1.0/JsonDiffPatchDotNet.dll",
+        "lib/netstandard1.3/JsonDiffPatchDotNet.dll",
+        "lib/netstandard2.0/JsonDiffPatchDotNet.dll"
+      ]
+    },
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -69,6 +96,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "JsonDiffPatch.Net >= 2.3.0",
       "Newtonsoft.Json >= 13.0.1",
       "RestSharp >= 106.12.0"
     ]
@@ -117,6 +145,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "JsonDiffPatch.Net": {
+            "target": "Package",
+            "version": "[2.3.0, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
