@@ -1,26 +1,19 @@
 ﻿using System;
-using System.Net.Http;
+using System.IO;
 using System.Net;
 using System.Text;
-using System.IO;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using Newtonsoft;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Linq;
 using JsonDiffPatchDotNet;
+using Newtonsoft.Json.Linq;
 
 namespace TestREST
 {
-    class Program
+    internal class Program
     {
         public static string json { get; set; }
         public static object Assert { get; private set; }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-
             Console.WriteLine("------------------------\n");
             Console.WriteLine("Test REST API \n");
             Console.WriteLine("------------------------\n");
@@ -28,7 +21,6 @@ namespace TestREST
             bool endApp = false;
             while (!endApp)
             {
-
                 // Console.WriteLine("Type the key of the GET method, and then press Enter:\n");
                 // string KeyGet = Convert.ToString(Console.ReadLine());
                 // Console.WriteLine("\n");
@@ -49,8 +41,6 @@ namespace TestREST
                 // string Params10 = "q";
                 // string Params11 = "";
 
-
-
                 Console.WriteLine("Choose the parameters of the request to be sent:");
                 Console.WriteLine("\n");
                 Console.WriteLine("\t1 - page=1");
@@ -66,7 +56,6 @@ namespace TestREST
                 //  Console.WriteLine("\t11 - ");
                 Console.WriteLine("\n");
                 Console.Write("Your option? ");
-                
 
                 //  HttpWebRequest request = (HttpWebRequest)WebRequest.Create(
                 //      "https://regions-test.2gis.com/1.0/regions?" + KeyGet + "=" + ValueGet);
@@ -91,7 +80,7 @@ namespace TestREST
                 //  response.Close();
                 //  readStream.Close();
                 // Console.WriteLine("------------------------\n");
-                //  Console.WriteLine("Compare:\n");                
+                //  Console.WriteLine("Compare:\n");
                 //  Console.WriteLine(result);
                 // Console.WriteLine("------------------------\n");
 
@@ -175,9 +164,7 @@ namespace TestREST
                         Console.WriteLine(result5);
                         Console.WriteLine("------------------------\n");
                         break;
-
                 }
-
 
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 if (Console.ReadLine() == "n") endApp = true;
@@ -185,9 +172,6 @@ namespace TestREST
                 Console.WriteLine("\n");
             }
             return;
-
-
-
         }
     }
 }
