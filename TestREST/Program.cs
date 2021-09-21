@@ -23,9 +23,15 @@ namespace TestREST
         static void Main(string[] args)
 
         {
-            Console.WriteLine("------------------------\n");
-            Console.WriteLine("Test REST API \n");
-            Console.WriteLine("------------------------\n");
+
+            var multilineTopic = @"------------------------
+
+Test REST API
+
+------------------------
+
+";
+            Console.WriteLine(multilineTopic);
             bool endApp = false;
             while (!endApp)
 
@@ -37,23 +43,29 @@ namespace TestREST
                 // Console.WriteLine("Type the value of the GET method, and then press Enter:\n");
                 //  string ValueGet = Convert.ToString(Console.ReadLine());
                 // Console.WriteLine("\n");                               
-                Console.WriteLine("Choose the parameters of the request to be sent:");
-                Console.WriteLine("\n");
-                Console.WriteLine("\t1 - page=1");
-                Console.WriteLine("\t2 - page=2");
-                Console.WriteLine("\t3 - page_size=5");
-                Console.WriteLine("\t4 - page_size=10");
-                Console.WriteLine("\t5 - page_size=15");
-                Console.WriteLine("\t6 - country_code=ru");
-                Console.WriteLine("\t7 - country_code=kz");
-                Console.WriteLine("\t8 - country_code=kg");
-                Console.WriteLine("\t9 - country_code=cz");
+                
                 //  Console.WriteLine("\t10 - q");
                 //  Console.WriteLine("\t11 - ");
-                Console.WriteLine("\n");
-                Console.Write("Your option? ");
+               
                 //int num = 0;
                 //CompareResponse(Params[num], str[num]);
+
+                var multilineChoose = @"Choose the parameters of the request to be sent:
+
+        1 - page=1
+        2 - page=2
+        3 - page_size=5
+        4 - page_size=10
+        5 - page_size=15
+        6 - country_code=ru
+        7 - country_code=kz
+        8 - country_code=kg
+        9 - country_code=cz
+
+Your option? 
+";
+                Console.WriteLine(multilineChoose);
+
                 switch (Console.ReadLine())
                 {
                     case "1":
@@ -150,12 +162,18 @@ namespace TestREST
             StreamReader readStream = new StreamReader(receiveStream, Encoding.UTF8);
             string json = readStream.ReadToEnd();
             JObject jobject = JObject.Parse(json);
-            string exmpl = jobject.ToString();
-            Console.WriteLine("\n");
-            Console.WriteLine("------------------------\n");
-            Console.WriteLine("You got a response:\n");
-            Console.WriteLine("------------------------\n");
-            Console.WriteLine(exmpl);
+            string exmpl = jobject.ToString();            
+            var multilineResponse = $@"
+
+------------------------
+
+You got a response:
+
+------------------------
+
+{exmpl}";
+            Console.WriteLine(multilineResponse);
+
             var jdp = new JsonDiffPatch();
             var left = JObject.Parse(compareStr);
             var right = JObject.Parse(json);
@@ -163,10 +181,16 @@ namespace TestREST
             // Assert.IsNotNull(result);
             response.Close();
             readStream.Close();
-            Console.WriteLine("------------------------\n");
-            Console.WriteLine("Compare:\n");
-            Console.WriteLine(result);
-            Console.WriteLine("------------------------\n");
+            var multilineResult = $@"
+
+------------------------
+
+Compare:
+{result}
+------------------------
+
+";
+            Console.WriteLine(multilineResult);
         }
     }
 }
